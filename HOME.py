@@ -10,7 +10,7 @@ with col01:
     st.audio('files/audio.mp3')
 
 with col02:
-    st.image('files/Yo.jpg', width= 200)
+    st.image('files/foto.jpg', width= 200)
 
 st.title("A Data Analyst From Spain")
 st.write('I am passionate about finding ways to use Python and VBA to be more efficiente and effective in business settings.')
