@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import psycopg2
 
 col01, col02 = st.columns(2, gap = 'large')
 
