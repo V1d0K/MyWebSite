@@ -28,6 +28,6 @@ df2 = pd.DataFrame(select)
 st.write(dataframe)
 st.write(df2)
 fig=df2.hist('juegos')
-st.pyplot(fig)
+st.pyplot('fig')
 
 # game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
