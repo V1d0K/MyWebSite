@@ -25,9 +25,11 @@ select = run_query("SELECT year, COUNT(game) from game_sales group by year;")
 # Print results.
 dataframe =pd.DataFrame(rows)
 df2 = pd.DataFrame(select)
+df2.columns=['año','juegos_por_año' ]
+df2.set_index('año', inplace=True)
+
 st.write(dataframe)
 st.write(df2)
-fig=df2.hist('juegos')
-st.pyplot('fig')
+st.bar_chart(fig)
 
 # game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
