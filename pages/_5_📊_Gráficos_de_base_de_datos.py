@@ -20,8 +20,8 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from game_sales")
-select = run_query("SELECT year, COUNT(game) from game_sales group by year;)
+rows = run_query("SELECT * from game_sales;")
+select = run_query("SELECT year, COUNT(game) from game_sales group by year;")
 
 # Print results.
 dataframe =pd.DataFrame(rows)
