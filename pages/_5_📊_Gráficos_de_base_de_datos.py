@@ -30,6 +30,6 @@ df2.set_index('año', inplace=True)
 
 st.write(dataframe)
 st.write(df2)
-st.bar_chart(fig)
+st.bar_chart(df2)
 
 # game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
