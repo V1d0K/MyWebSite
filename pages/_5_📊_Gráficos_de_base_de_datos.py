@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib as plt
 import psycopg2
 
 # Initialize connection.
@@ -24,3 +25,4 @@ rows = run_query("SELECT * from game_sales")
 # Print results.
 game_df=pd.DataFrame(rows)
 st.dataframe(game_df)
+game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
