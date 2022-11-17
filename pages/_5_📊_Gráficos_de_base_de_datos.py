@@ -21,9 +21,14 @@ def run_query(query):
         return cur.fetchall()
 
 rows = run_query("SELECT * from game_sales")
+select = run_query("SELECT year, COUNT(game) from game_sales group by year;)
 
 # Print results.
-game_df=pd.DataFrame(rows)
-st.dataframe(game_df)
+dataframe =pd.DataFrame(rows)
+df2 = pd.DataFrame(select)
+st.write(dataframe)
+st.write(df2)
+fig=df2.hist('juegos')
+st.pyplot(fig)
 
 # game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
