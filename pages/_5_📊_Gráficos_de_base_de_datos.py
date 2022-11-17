@@ -25,4 +25,5 @@ rows = run_query("SELECT * from game_sales")
 # Print results.
 game_df=pd.DataFrame(rows)
 st.dataframe(game_df)
-game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
+
+# game_df.apply(lambda x: x.sort_values(by = '4', ascending=False)).head(10)
