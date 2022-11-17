@@ -6,7 +6,7 @@ col01, col02 = st.columns(2, gap = 'large')
 
 with col01:
     st.header('Hi, I am Fran')
-    st.audio('files/Streamlit-Fran-website.mp3')
+    st.audio('files/audio.mp3')
 
 with col02:
     st.image('files/Yo.jpg', width= 200)
