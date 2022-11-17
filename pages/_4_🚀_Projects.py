@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import panel as pn
 pn.extension('tabulator')
-import
 
 
 col1, col2 = st.columns(2, gap = 'large')
