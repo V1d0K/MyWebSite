@@ -30,7 +30,7 @@ with col2:
     st.image('https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47pxeuod76erv1q2oy5yusdqtw96528tv3c7hy5ghz&rid=giphy.gif&ct=g')
 
 # st.select_slider('Deslizame guapo')
-st.sidebar.slider('Widget de deslizamiento', 0.6)
+st.slider('Widget de deslizamiento', 0.6)
 st.checkbox('yes')
 st.button('Click')
 st.radio('Elige tu sexo', ['Hombre', 'Mujer'])
